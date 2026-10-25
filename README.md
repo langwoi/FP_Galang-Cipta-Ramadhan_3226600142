@@ -32,7 +32,7 @@ Daftar perubahan terhadap kode dasar, beserta alasan dan pengaruhnya terhadap ha
 | 1 | Menambahkan Workers | 20 | 16 | auto | 1.0 | 0.72 | Berhasil Tapi data yang ketrack lambat |
 | 2 | Menambahkan Workers | 15 | 16 | auto | 0.7 | 0.9 | Berhasil Tapi Data Yang ketrack kurang optimal |
 | 3 | Menambahkan Workers | 50 | 16 | auto | 1.0 | 0.75 | Berhasil Tapi Ada Sedikit False Positive |
-| 4 | Menambahkan Workers | 60 | 16 | auto | 1.0 | 0.78 | Berhasil Tapi Ada Sedikit False Positive |
+| 4 | Menambahkan Workers | 60 | 16 | auto | 1.0 | 0.78 | Berhasil dengan optimal |
 
 ## Analisis dan Kendala
 - Analisis penyebab skenario terbaik menghasilkan nilai lebih tinggi: Skenario ke 4 menghasilkan nilai metrik evaluasi yang paling optimal dibandingkan epoch yang lebih rendah.hal ini disebabkan karena jumlah epoch yang lebih banyak memberikan ruang iterasi yang cukup bagi model untuk mencapai konvergensi penuh,memahami pola gambar secara mendalam,serta meminimalisasi underfiting 
