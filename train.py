@@ -39,16 +39,16 @@ from ultralytics import YOLO
 
 # ==================== CONFIGURATION ====================
 # Dataset (Roboflow)
-ROBOFLOW_WORKSPACE = "workspace-name"  # from the dataset URL
-ROBOFLOW_PROJECT = "project-name"      # from the dataset URL
-ROBOFLOW_VERSION = 1                   # dataset version number on Roboflow
+ROBOFLOW_WORKSPACE = "13-galang-cipta-ramadhan"  # from the dataset URL
+ROBOFLOW_PROJECT = "belajar-train-data"      # from the dataset URL
+ROBOFLOW_VERSION = 10                      # dataset version number on Roboflow
 DATASET_DIR = "dataset"                # download destination folder
 
 # Training
 MODEL = "yolov8n.pt"  # options: yolov8n.pt or yolov8s.pt
-EPOCHS = 50
+EPOCHS = 60
 IMGSZ = 640           # must stay 640, do not change
-BATCH = 16            # lower to 8 or 4 on out-of-memory errors
+BATCH = 16          # lower to 8 or 4 on out-of-memory errors
 SEED = 0
 # =======================================================
 
@@ -91,6 +91,7 @@ def main():
         imgsz=IMGSZ,
         batch=BATCH,
         seed=SEED,
+        workers = 0,
     )
 
     # Training output folder (runs/detect/train, train2, ...)
