@@ -1,7 +1,7 @@
 import cv2 as cv
 from ultralytics import YOLO
 
-model = YOLO('grafik/detect/train4/weights/best.pt')
+model = YOLO('runs/detect/train4/weights/best.pt')
 cam = cv.VideoCapture(1)
 
 while cam.isOpened():
